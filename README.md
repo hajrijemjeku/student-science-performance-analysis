@@ -21,9 +21,9 @@ Section 2: Research Question & Hypotheses
 
 A Welch's independent samples t-test was used to compare the mean Science Average between the two groups.
 
-### Hypothesis 2 - Multiple Linear Regression
+### Multiple Linear Regression
 
-The multiple linear regression analysis investigates whether personal characteristics and study habits collectively predict students' Science Average.
+To answer the research question, a multiple linear regression model was developed to investigate whether personal characteristics and study habits collectively predict students' Science Average.
 
 The independent variables included:
 
