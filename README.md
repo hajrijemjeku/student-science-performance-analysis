@@ -391,7 +391,7 @@ Repository Structure
 ```text
 student-science-performance-analysis/
 |
---- analysis/
+--- excel-analysis/
 |   -- Student_Science_Performance_Analysis.xlsx
 |   -- Student_Science_Performance_Presentation.pdf
 |
@@ -412,7 +412,7 @@ student-science-performance-analysis/
 
 ### Folder Description
 
-analysis/ - Contains the complete Excel analysis workbook and final presentation.
+excel-analysis/ - Contains the complete Excel analysis workbook and final presentation.
 data/ - Contains the sanitized version of the original dataset used for the project.
 images/ - Contains selected visualizations used to present the analysis.
 docs/ - Reserved for additional project documentation.
