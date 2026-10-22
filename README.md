@@ -1,13 +1,16 @@
 # Student Science Performance Analysis
 
-## Statistical Analysis of Student Performance
+## Statistical Analysis and Interactive Dashboard of Student Performance
 
-This project investigates whether personal characteristics and study habits can predict students' Science Average.
+This project investigates whether personal characteristics and study habits can predict students' Science Average. The same dataset of 6,000 students is analyzed in two ways:
 
-The analysis was conducted using a dataset of 6,000 students and includes data cleaning, descriptive statistics, exploratory data analysis (EDA), hypothesis testing, and multiple linear regression.
+1. **Statistical analysis in Excel**: data cleaning, descriptive statistics, EDA, hypothesis testing and multiple linear regression.
+2. **Interactive dashboard in Power BI**: a visual exploration of how study habits, attendance, working and subject average relate to career aspiration.
+
+**Quick links:** [Excel analysis](excel-analysis/) · [Power BI dashboard (PDF)](powerbi-dashboard/dashboard_export.pdf)
 
 
-Section 2: Research Question & Hypotheses
+
 ## Research Question
 
 **Can personal characteristics and study habits predict students' Science Average?**
@@ -36,7 +39,7 @@ The independent variables included:
 The dependent variable was **Science Average**.
 
 
-Section 3: Project Overview & Workflow
+
 ## Project Overview
 
 The project follows a structured statistical analysis workflow, starting with the original student dataset and progressing through data preparation, descriptive analysis, exploratory analysis, hypothesis testing, and predictive modeling.
@@ -53,7 +56,7 @@ The project follows a structured statistical analysis workflow, starting with th
 8. **Model Diagnostics** - Evaluated the regression model using residual analysis, a normal probability plot, and Variance Inflation Factor (VIF) to assess multicollinearity.
 
 
-Section 4: Dataset
+
 ## Dataset
 
 The analysis uses the **Studies Career Recommendation Dataset**, containing information on 6,000 students. The dataset includes academic performance, study habits, personal characteristics, and career aspirations.
@@ -89,7 +92,7 @@ The original dataset was obtained from Kaggle:
 The public dataset included in this repository is a sanitized copy from which direct personal identifiers such as first name, last name, and email address have been removed.
 
 
-Section 5: Data Preparation & Cleaning
+
 ## Data Preparation & Cleaning
 
 The original dataset was reviewed and prepared before performing the statistical analysis. The main goal of this step was to create a consistent dataset containing only the variables relevant to the research question.
@@ -112,7 +115,7 @@ The original dataset was reviewed and prepared before performing the statistical
 The cleaned and prepared data was then used for descriptive statistics, exploratory data analysis, hypothesis testing, and multiple linear regression.
 
 
-Section 6: Descriptive Statistics
+
 ## Descriptive Statistics
 
 Descriptive statistics were used to understand the main characteristics of the dataset before performing more complex statistical analyses.
@@ -159,7 +162,7 @@ For each group, the number and percentage of students were calculated. Group-lev
 These comparisons provided an initial understanding of how student characteristics and study habits differed across groups.
 
 
-Section 7: Exploratory Data Analysis
+
 ## Exploratory Data Analysis (EDA)
 
 Exploratory Data Analysis was performed to better understand the distribution of Science Average and investigate relationships between the independent variables and the target variable before building the regression model.
@@ -203,7 +206,7 @@ The results showed a positive correlation between Weekly Self-Study Hours and Sc
 ![Correlation Matrix](images/correlation_matrix.png)
 
 
-Section 8: Hypothesis Testing
+
 ## Hypothesis Testing
 
 To investigate whether students aspiring to STEM careers had a different average Science Average from students aspiring to Non-STEM careers, an independent samples Welch's t-test was performed.
@@ -231,7 +234,7 @@ There is statistically significant evidence that the mean Science Average differ
 The test establishes a statistically significant difference between the two groups, but it does not by itself establish a causal relationship between career aspiration and Science Average.
 
 
-Section 9: Multiple Linear Regression
+
 ## Multiple Linear Regression
 
 A multiple linear regression model was developed to investigate whether personal characteristics and study habits collectively predict students' Science Average.
@@ -272,7 +275,7 @@ The Adjusted R² of approximately 0.198 is very close to the R² value, suggesti
 The model's standard error was approximately 6.80 points, representing the typical size of the prediction error around the regression model.
 
 
-Section 9.1: Regression Coefficients
+
 ### Regression Coefficients
 
 The regression coefficients show how the predicted Science Average changes when each independent variable increases by one unit, while the other variables in the model are held constant.
@@ -288,7 +291,7 @@ The regression coefficients show how the predicted Science Average changes when 
 The regression results indicate that **Absence Days, Weekly Self-Study Hours, and Part-Time Job were statistically significant predictors at the 5% significance level**, while Gender and Extracurricular Activities were not statistically significant predictors.
 
 
-Section 9.2: ANOVA and Overall Model Significance
+
 ### Overall Model Significance
 
 An ANOVA test was used to determine whether the regression model as a whole provides statistically significant predictive information about Science Average.
@@ -302,7 +305,7 @@ This indicates that the set of independent variables, considered together, provi
 However, statistical significance of the overall model does not mean that the model explains most of the variation in Science Average. The R² of approximately 20% indicates that a substantial proportion of the variation remains unexplained by the variables included in this model.
 
 
-Section 9.3: Model Diagnostics
+
 ### Model Diagnostics
 
 Several diagnostic checks were performed to evaluate the reliability of the multiple linear regression model.
@@ -334,7 +337,7 @@ Residual analysis was also performed to examine the differences between the obse
 The residual plots were used as diagnostic tools to assess whether there were systematic patterns in the prediction errors and to evaluate the overall behavior of the model.
 
 
-Section 10: Key Findings
+
 ## Key Findings
 
 The analysis produced several important findings regarding student Science Average:
@@ -358,16 +361,62 @@ The analysis produced several important findings regarding student Science Avera
 Overall, the results suggest that study habits and attendance-related factors were important predictors of Science Average in this dataset, while some personal characteristics did not provide statistically significant predictive information after accounting for the other variables in the model.
 
 
-Section 11: Tools & Techniques
+
+## Power BI Dashboard
+
+To complement the statistical analysis, I built an interactive dashboard in Power BI using the same dataset. Where the Excel analysis tests whether relationships are statistically significant, the dashboard lets a viewer explore the data directly with filters and slicers.
+
+**Goal:** Explore how study hours, absence days, extracurricular activities and part-time work relate to academic performance and to the career students aspire to.
+
+### Page 1: Overview
+![Overview](powerbi-dashboard/screenshots/01_overview.png)
+
+Shows total students, average study hours, average absence days, the number of students with a part-time job and the number in extracurricular activities. Charts cover career aspirations, grouped study hours and absence days, the share of students in each performance level, and career aspirations by performance, with filters for Gender, Study Hours Group, Part-TIme Job and Performance.
+
+### Page 2: Academic Performance
+![Academic Performance](powerbi-dashboard/screenshots/02_academic_performance.png)
+
+Compares the overall average with Natural Science (physics, chemistry, biology) and Social Studies (history, geography) scores and the gap between the two. Charts break these down by career category and score group, and a table lists each career category's averages and gap. Career categories can be drilled down to individual careers, with filters for performance, study hours group, students in activities, and part-time job.
+
+### Page 3: Habits & Career Aspirations
+![Habits and Career Aspirations](powerbi-dashboard/screenshots/03_habits_career_aspirations.png)
+
+Shows how study hours, absences, activities and part-time work differ across career categories, how average scores change with study hours and absence days, and how average study hours compare for students with and without a part-time job. The KPIs are overall percentages (high study hours, high absences, part-time job, activities). Filters cover performance, study hours group and part-time job.
+
+### What the dashboard shows
+*Figures below are shown with all filters cleared.*
+
+- Study time differs a lot by career aspiration: students aiming for Science & Health study about 35 hours a week, against about 3 hours for Business & Real Estate.
+- Within some categories the careers differ strongly. For example for study hours, Game Developer (about 3 hours) is far below Software Engineer (about 25 hours), and Artist (about 2.5 hours) is far below Writer (about 24 hours).
+- Only about 16% of students have a part-time job, but the share is much higher in Business & Real Estate (about 42%) than in the other categories (7–11%).
+- Students with a part-time job have a lower average score (78.29 vs 81.48 points) and study fewer hours on average (about 12 vs 19 hours a week). Most of this gap appears to come from career aspirations: working students are concentrated in Business & Real Estate, where study hours are low, and within individual career categories, students with and without a job study a similar number of hours.
+- Students who take part in extracurricular activities have almost the same average score as those who don't (80.6 vs 81.08 points), so activities show little relationship with performance.
+- Average scores rise with study time: students who study 35+ hours a week average 92.4 points, compared with 77.1 for those who study 0–5 hours. The rise is not steady. The middle groups are close together (80.6 to 82.2), and the biggest jump comes at the 35+ group.
+- Absence days show a weaker link with scores. Students with up to 3 absences average 81.6–82.0 points, and the average falls to 80.6 for 4–6 absences and 78.0 for 7+. Across absence groups the scores differ by about 4 points, while across study hours groups they differ by about 15 points (77.1 to 92.4).
+
+### A note on interpretation
+The dashboard shows relationships, not causes. For example, students who study more tend to score higher, but the data cannot show that studying is the reason. A third factor, such as motivation, could drive both, or students who already score well might choose to study more. The dataset is a single snapshot of each student, so it cannot follow students over time, which would be needed to test cause and effect. Career aspirations are also what students say they want, not outcomes. This applies to every relationship shown in the dashboard, including absence days, extracurricular activities and part-time jobs.
+
+### Data preparation in Power BI
+- Power Query: removed duplicate rows (6,000 raw rows → 2,000 unique students) and checked data types.
+- Calculated columns (DAX): Natural Science Score, Social Studies Score, Overall Average, Science-Social Gap, Career Category (17 careers grouped into 6 categories), and grouped bands for scores, absence days and study hours.
+- Measures (DAX): total students, working students, students in activity, averages, percentage measures etc.
+- Note: the Excel analysis defines "Science Average" as math, physics, chemistry and biology, while the dashboard's Natural Science Score excludes math, so the two are not directly comparable.
+
+### Files
+- [Dashboard PDF export](powerbi-dashboard/dashboard_export.pdf)
+- [Power BI file (.pbix)](powerbi-dashboard/StudentPerformance.pbix) *(requires Power BI Desktop)*
+
+
+
 ## Tools & Techniques
 
 The project was completed using the following tools and statistical techniques:
 
 ### Tools
 
-- **Microsoft Excel**
-- **Excel Analysis ToolPak**
-- **Pivot Tables**
+- **Microsoft Excel** (Analysis ToolPak, Pivot Tables)
+- **Power BI Desktop** (Power Query, DAX)
 - **GitHub**
 
 ### Statistical Techniques
@@ -385,41 +434,35 @@ The project was completed using the following tools and statistical techniques:
 - Normal Probability Plot
 
 
-Repository Structure
+
 ## Repository Structure
 
 ```text
 student-science-performance-analysis/
-|
---- excel-analysis/
-|   -- Student_Science_Performance_Analysis.xlsx
-|   -- Student_Science_Performance_Presentation.pdf
-|
---- data/
-|   -- sanitized_student_scores_6k.csv
-|
---- docs/
-|
---- images/
-|   -- science_average_distribution.png
-|   -- study_hours_vs_science_average.png
-|   -- absence_days_vs_science_average.png
-|   -- stem_vs_nonstem_science_average.png
-|   -- correlation_matrix.png
-|
---- README.md
+├── excel-analysis/
+│   ├── Student_Science_Performance_Analysis.xlsx
+│   └── Student_Science_Performance_Presentation.pdf
+├── powerbi-dashboard/
+│   ├── StudentPerformance.pbix
+│   ├── dashboard_export.pdf
+│   └── screenshots/
+├── data/
+│   └── sanitized_student_scores_6k.csv
+├── images/
+└── README.md
+```
 
 
 ### Folder Description
 
-excel-analysis/ - Contains the complete Excel analysis workbook and final presentation.
-data/ - Contains the sanitized version of the original dataset used for the project.
-images/ - Contains selected visualizations used to present the analysis.
-docs/ - Reserved for additional project documentation.
-README.md - Provides an overview of the project, methodology, results, and conclusions.
+- `excel-analysis/` - Excel workbook and final presentation with the full statistical analysis.
+- `powerbi-dashboard/` - Interactive Power BI dashboard, PDF export and screenshots.
+- `data/` - Sanitized version of the original dataset used for the project.
+- `images/` - Selected visualizations from the Excel analysis.
+- `README.md` - Project overview, methodology, results and conclusions.
 
 
-Section 13: Limitations
+
 ## Limitations
 
 Several limitations should be considered when interpreting the results of this analysis:
@@ -431,7 +474,7 @@ Several limitations should be considered when interpreting the results of this a
 - The results describe relationships within this dataset and may not necessarily generalize to other student populations or educational settings.
 
 
-Section 14: Dataset Source & License
+
 ## Dataset Source & License
 
 The original dataset was obtained from Kaggle:
