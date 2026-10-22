@@ -404,7 +404,7 @@ The dashboard shows relationships, not causes. For example, students who study m
 - Note: the Excel analysis defines "Science Average" as math, physics, chemistry and biology, while the dashboard's Natural Science Score excludes math, so the two are not directly comparable.
 
 ### Files
-- [Dashboard PDF export](powerbi-dashboard/dashboard_export.pdf)
+- [Dashboard PDF export](powerbi-dashboard/StudentPerformance_Dashboard.pdf)
 - [Power BI file (.pbix)](powerbi-dashboard/StudentPerformance.pbix) *(requires Power BI Desktop)*
 
 
