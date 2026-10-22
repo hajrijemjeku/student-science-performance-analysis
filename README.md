@@ -7,7 +7,7 @@ This project investigates whether personal characteristics and study habits can 
 1. **Statistical analysis in Excel**: data cleaning, descriptive statistics, EDA, hypothesis testing and multiple linear regression.
 2. **Interactive dashboard in Power BI**: a visual exploration of how study habits, attendance, working and subject average relate to career aspiration.
 
-**Quick links:** [Excel analysis](excel-analysis/) · [Power BI dashboard (PDF)](powerbi-dashboard/dashboard_export.pdf)
+**Quick links:** [Excel analysis](excel-analysis/) · [Power BI dashboard (PDF)](powerbi-dashboard/StudentPerformance_Dashboard.pdf)
 
 
 
