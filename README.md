@@ -405,7 +405,7 @@ The dashboard shows relationships, not causes. For example, students who study m
 
 ### Files
 - [Dashboard PDF export](powerbi-dashboard/StudentPerformance_Dashboard.pdf)
-- [Power BI file (.pbix)](powerbi-dashboard/StudentPerformance.pbix) *(requires Power BI Desktop)*
+- [Power BI file (.pbix)](powerbi-dashboard/StudentPerformance.pbix)  *(requires Power BI Desktop)*
 
 
 
